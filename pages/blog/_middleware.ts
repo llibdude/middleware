@@ -1,6 +1,6 @@
-import { NextRequest } from "next/server";
+import { NextResponse } from "next/server";
 
-export const middleware = async (req: NextRequest) => {
+export const middleware = async () => {
   // Just chillin doing nothing
-  return req;
+  return NextResponse.next();
 };
